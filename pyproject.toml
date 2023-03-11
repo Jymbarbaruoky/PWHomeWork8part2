@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pwhomework8part2"
+version = "0.1.0"
+description = ""
+authors = ["Jymbarbaruoky <116517553+Jymbarbaruoky@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pymongo = "^4.3.3"
+mongoengine = "^0.27.0"
+pika = "^1.3.1"
+faker = "^17.6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
