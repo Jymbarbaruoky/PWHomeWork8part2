@@ -1,4 +1,3 @@
-from datetime import datetime
 import json
 
 from models import MessageInfo
@@ -40,6 +39,7 @@ def create_tasks():
             ))
         print(" [x] Sent %r" % message)
     connection.close()
+
 
 def main():
     create_db_records()
