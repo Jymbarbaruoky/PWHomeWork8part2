@@ -4,8 +4,10 @@ connect(host="mongodb+srv://PWHomeWork:123321@cluster0.duijelz.mongodb.net/PWHom
         ssl=True)
 
 
-class MessageInfo(Document):
+class ClientInfo(Document):
     fullname = StringField(max_length=50)
     email = EmailField()
-    message = StringField()
+    phone = StringField()
+    best_message_is_email = BooleanField(default=True)
+    best_message_is_sms = not best_message_is_email
     status = BooleanField(default=False)
